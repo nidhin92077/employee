@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+struct emp
+{
+    char name[10] ;
+    int age,phonenumber,salary;
+} e[10] ;
+void main()
+{
+    int i, n=20 ;
+    for(i = 0 ; i < n ; i++)
+    {
+        printf("\nEnter the name : ") ;
+        scanf("%s", e[i].name) ;
+        printf("\nEnter the age : ") ;
+        scanf("%d", &e[i].age) ;
+        printf("\nEnter the phone number : ") ;
+        scanf("%d", &e[i].phonenumber) ;
+        printf("\nEnter the salary : ") ;
+        scanf("%d", &e[i].salary) ;
+    }
+    printf("\nName \t Age \t        Phone Number \t           Salary\n\n") ;
+    for(i = 0 ; i < n ; i++)
+    {
+        printf("%s \t %d \t\t %d \t\t %d \n", 
+        e[i].name, e[i].age, e[i].phonenumber, e[i].salary) ;
+    }
+}
